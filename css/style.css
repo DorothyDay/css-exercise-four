@@ -1,4 +1,87 @@
-body {
-  background-color: #dadada;
-  font-size: 10px;
+* {
+  box-sizing: border-box;
+}
+
+body, section {
+  margin: 0 auto;
+  font size: 1em;
+  background-color: lightgray;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container h1 {
+  font-family: arial;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 1.2em;
+  padding: 12px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+div {
+  width: 100%;
+  padding: 10px;
+  float: left;
+  margin: 10px;
+}
+
+.preview {
+  float: left;
+  height: 20em;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  margin: 10px;
+}
+
+@media screen and (min-width: 575px){
+   .preview {
+    display: inline-block;
+    height: 20em;
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 991px){
+   .preview {
+    margin: 1%;
+    width: 22%;
+  }
+}
+
+.preview h1 {
+  font-family: serif;
+  font-size: 1.5em;
+  font-variant: normal;
+  text-align: left;
+  padding: 30px 0 0 30px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.preview.baku {
+  background-image: url("../images/baku.jpg");
+  background-size: cover;
+}
+
+.preview.london {
+  background-image: url("../images/london.png");
+  background-size: cover;
+}
+
+.preview.madrid {
+  background-image: url("../images/madrid.jpg");
+  background-size: cover;
+}
+
+.preview.rome {
+  background-image: url("../images/rome.jpg");
+  background-size: cover;
 }
